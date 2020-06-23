@@ -41,7 +41,7 @@ EOD;
   - lists
   - hash tables/dictionaries
   - Stack (using [array_pop](https://www.php.net/manual/en/function.array-pop.php)
-  and [array_push](https://www.php.net/manual/en/function.array-push.php)
+  and [array_push](https://www.php.net/manual/en/function.array-push.php))
 - Literals like this:
 ```
 $array = array(
