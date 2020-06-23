@@ -1,6 +1,8 @@
 # PHP Notes
 
 ## Notes
+__Remember Semicolons `;;;;;;;;;`__
+(go brrrrrrrr)
 ### bool
 - Each basic type has it's own rules for converting to bool
 
@@ -12,6 +14,24 @@
 echo 'You can also have embedded newlines in
 strings this way as it is
 okay to do';
+```
+- A table of double quote string escapes is [here](https://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.double)
+- Heredoc strings exists, and work like double quote strings:
+```
+echo <<<EOT
+My name is "$name". I am printing some $foo->foo.
+Now, I am printing some {$foo->bar[1]}.
+This should print a capital 'A': \x41
+EOT;
+```
+- Nowdoc strings are 100% literal:
+```
+// note the single quotes around the identifier
+echo <<<'EOD'
+Example of string spanning multiple lines
+using nowdoc syntax. Backslashes are always treated literally,
+e.g. \\ and \'.
+EOD;   
 ```
 
 ## Useful Tricks
